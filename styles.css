@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+h3, a {
+    font-size: 1.4em;
+    padding:10px;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    background-color: #1B1919;
+}
+#wrapper {
+    max-width:1300px;
+    margin: 0 auto;
+    padding:0;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width:100%;
+    /* height:150px; */
+    /* background-color: #020202; */
+    padding:0;
+    margin: 0;
+}
+nav ul {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* justify-content: flex-end; */
+    width: 100%;
+    padding: 10px 10px;
+    margin:0;
+    list-style: none;
+}
+nav ul li {
+    padding: 5px;
+    margin:0 20px;
+    display: inline-block;
+    text-align: center;
+    /* justify-self: flex-end; */
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: ivory;
+}
+#logo {
+    /* max-width:100px; */
+    /* justify-self: flex-start; */
+    margin-right: auto;
+    /* margin:0; */
+}
+#logo img {
+    width:100%;
+    max-height: auto;
+    
+}
+nav ul li a:hover {
+    font-size: 1.4em;
+    color: rgb(109, 109, 81);
+    font-weight: bold;
+    
+}
+#grow {
+    flex-grow: 5;
+}
+@media only screen and ( max-width:693px) {
+
+    nav ul {
+        flex-flow: column nowrap;
+        width:200px;
+        align-items:baseline;
+        padding-left: 20px;
+              
+    }
+    nav ul li {
+        
+        padding:5px 0;
+        margin:0;
+    }
+    nav ul li a {
+        font-size: 1.4em;
+        color: black;
+        font-weight: bold;
+        
+    }
+    
+    #logo {
+        display: none;
+    }
+}
+header {
+    padding: 2px 20px;
+    width:100%;
+    margin:0;
+}
+section {
+    padding:20px;
+}
+.about, .testimonial, .team-section {
+    background-color: #9C8D7A;
+    color: #362B2A;
+}
+.about h1, .testimonial h1, .team-section h1 {
+    color: #362B2A;
+}
+#img1 {
+    background-image: url(./images/header-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:0;
+    padding:0;
+    height:calc(100vw * .5);
+}
+
+/* #img2 p {
+    color: ivory;
+    margin-left: 50%;
+    margin-right: 20px;
+    font-size: 1.4em;
+    text-align: right;
+} */
+
+nav a {font-family: 'Amatic SC', cursive;
+font-size: 2em!important}
+h1 {
+    font-size: 3em!important;
+}
+h1, h3 {
+    text-transform: uppercase;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 0;
+    /* padding-top:30px; */
+    color: rgb(233, 230, 230);
+    /* text-shadow:1px 1px whitesmoke; */
+}
+h3 {
+    text-shadow:1px 1px whitesmoke;
+    color: rgb(71, 56, 56);
+
+}
+@media only screen and (max-width:430px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+}
+@media only screen and ( max-width:375px) {
+    h1 {
+        font-size: 1.2em;
+        padding-top: 23px;
+    }
+
+}
+#testimonial {
+    margin:5px auto;
+
+}
+p {
+    font-size: 1.4em;
+    color: ivory;
+    line-height: 1.5;
+}
+.flex_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.prd-container, .team-container {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* width:300px; */
+    height:400px;
+    border: 2px solid rgba(156,141,122,0.5);
+    text-align: center;
+}
+.prd-container {
+    padding:15px;
+    border:2px solid rgb(245 244 244 / 50%)}
+#skinny {
+    background-image: url(images/skinny_candle.jpg);
+    flex-grow: 2;
+}
+#hold-candle {
+    background-image: url(images/hold_candle.jpg);
+    flex-grow: 2;
+}
+#right-candle {
+    background-image: url(images/right-candle.jpg);
+    flex-grow: 1;
+}
+#lots-candles{
+    background-image: url(images/lots-candles.jpg);
+    flex-grow: 5;
+}
+
+.team-container {
+    justify-items: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+}
+#dave {
+    background-image: url(images/dave.jpg);
+    flex-grow: 3;
+}
+#sally {
+    background-image: url(images/sally.jpg);
+    flex-grow: 1;
+}
+#team {
+    background-image: url(images/team.jpg);
+    flex-grow: 4;
+}
+
+.bio {
+    width:100%;
+    padding: 15px;
+    background-color:black;
+    opacity:.8;
+}
+.bio p {
+    padding:0;
+    margin:0;
+}
+footer {
+    width:100%;
+    height:100px;
+    text-align: center;
+}
+footer p {
+    margin-top:50px;
+}
+footer p, footer p a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    font-size: 1em;
+    font-style: italic;
+}
